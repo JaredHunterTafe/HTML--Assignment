@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="site.css">
+
+    <style>
+        a:link,
+        a:visited {
+            background-color: rgb(70, 68, 68);
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover,
+        a:active {
+            background-color: grey;
+        }
+    </style>
+
+
+
+<body>
+<div>
+    <img src="../Public/images/sprgif.gif" alt="SPRgif" style="height:300px;float: right;">
+    <img src="../Public/images/sprgif3.gif" alt="SPRgif" style="height:300px;float: left;">
+
+</div>
+    <div class="header">
+        <p><div style="float: right;" class="simple signin" role="menu" area-labelledby="signin">
+			<form action="" class="navbar-form form-inline" method="post">
+				<input name="email" type="text" placeholder="Email">
+				<input name="password" type="password" placeholder="Password">
+				<button class="btn btn-primary">Sign In</button>
+				</form>
+			</div></p>
+        <h1 style="text-align: left;">Scissors Paper Rock</h1>
+        <div class="header-container">
+            <div><a href='../images/1920px-Rock-paper-scissors.svg.png' target="_blank">Quick Reference Guide</a></div>
+            <div> <a href='how-to.html'>How to Play</a></div>
+            <div><a href='https://en.wikipedia.org/wiki/Rock_paper_scissors'>History of the game</a></div>
+        </div>
+    </div>
+
+    </head>
+    <h1 style="text-align: center;">Lets play a game</h1>
+    <h2 style="text-align: center;">Scissors, Paper, Rock?</h2>
+
+    <div class="flex-container">
+        <div onclick="playerScissors()">Scissors</div>
+        <div onclick="playerPaper() ">Paper</div>
+        <div onclick="playerRock() ">Rock</div>
+    </div>
+
+
+
+
+    <div class="results-box">
+        <div>
+            <h1>Player Score</h1>
+            <p>Score: <span class="playerScore">0</span></p>
+        </div>
+        <div>
+            <h1>Computer Score</h1>
+            <p>Score: <span class="computer-score">0</span></p>
+        </div>
+        <div>
+            <h1>Draws</h1>
+            <p>Score: <span class=$drawScore>0</span></p>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+
+        <p> &#169 Jared Hunter</p>
+        <p><a href="faqpage.html">About Us</a></p>
+
+        
+    </div>
+    
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+
+
+</html>

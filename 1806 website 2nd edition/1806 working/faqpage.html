@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="site.css">
+
+    <style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Froms Page</h2>
+
+</div>
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+
+        <form>
+            Username/E-Mail:<br>
+            <input type="text" name="username">
+            <br>
+            Password:<br>
+            <input type="password" name="email_id">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+        <h1> Contact Us
+        </h1>
+        <section class="contact-wrap">
+            <form action="" class="contact-form">
+                <div class="col-sm-6">
+                    <div class="input-block">
+                        <label for="">First Name</label><br>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input-block">
+                        <label for="">Last Name</label><br>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="input-block">
+                        <label for="">Email</label><br>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="input-block">
+                        <label for="">Message Subject</label><br>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="input-block textarea">
+                        <label for="">Drop your message here</label><br>
+                        <textarea rows="3" type="text" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <button class="square-button">Send</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
